@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                CADASTRO
+            </div>
+        </div>
+    </header>
+
+    <section id="geral">
+        <aside class="container2">
+            <form action="camporinvalido" method="post" name="formulario" enctype="multipart/form-data">
+                <div class="campo_nome">
+                    <label>
+                        Digite seu nome completo:<br/>
+                        <input class="nome" type="text" name="nome_type" required minlength="2"/>
+                    </label>
+                </div>
+
+                <div class="campo_email" >
+                    <label>
+                        Informe seu email:
+                        <input class="email" type="email" name="email_type" required />
+                    </label>
+                </div>
+
+                <div class="campo_idade">
+                    <label>
+                        Informe sua idade:
+                        <input class="idade" type="number" name="idade_type" required />
+                    </label>
+                </div>
+
+                <div class="campo_celular">
+                    <label>
+                        Celular:
+                        <input type="tel" class="celular" placeholder="(99) 99999-9999" name="celular_type" required />
+                    </label>
+                </div>
+
+                <div class="campo_endereco" >
+                    <label>
+                        Endereço:
+                        <input class="endereco" type="text" name="endereco_type"  required />
+                    </label>
+                </div>
+
+                <div class="campo_estado">
+                    <label>
+                        Selecione o seu Estado:<br/>
+                        <select class="estado" name="estado_type"  required>
+                            <option value=""></option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="BH">Bahia</option>
+                            <option value="RG">Rio Grande do Sul</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="PE">Pernambuco</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="campo_genero">
+                    <label>
+                        Informe seu gênero sexual:<br/>
+                        <input class="genero_masculino" type="checkbox" name="genero_sexual" />
+                        Masculino<br/>
+                        <input class="genero_feminino" type="checkbox" name="genero_sexual" />
+                        Feminino
+                    </label>
+                </div>
+
+                <div class="botao_envio">
+                    <label>
+                        <input class="botao" type="submit" value="Enviar dados" name="botao_type" required/>
+                    </label>
+                </div>
+            </form>
+        </aside>
+    </section>
+
+</body>
+</html>
